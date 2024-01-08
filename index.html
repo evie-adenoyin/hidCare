@@ -10,6 +10,11 @@
     <!-- ===============================================-->
     <title>HID Care | Your Radiant Living Starts Here</title>
 
+    <!-- emailJs script  -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <!-- ===============================================-->
     <!--    Favicons-->
     <!-- ===============================================-->
@@ -25,6 +30,11 @@
     <!--    Stylesheets-->
     <!-- ===============================================-->
     <link href="theme.css" rel="stylesheet" />
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("p9VowK9JT6fcXAU3S");
+      })();
+    </script>
   </head>
 
   <body>
@@ -558,7 +568,7 @@
               <img class="w-100" src="appointment.png" alt="..." />
             </div>
             <div class="col-lg-6 z-index-2">
-              <form class="row g-3">
+              <form class="row g-3" id="appointment">
                 <div class="col-md-6">
                   <label class="visually-hidden" for="inputName">Name</label>
                   <input
@@ -566,6 +576,7 @@
                     id="inputName"
                     type="text"
                     placeholder="Name"
+                    name="Name"
                   />
                 </div>
                 <div class="col-md-6">
@@ -575,18 +586,19 @@
                     id="inputPhone"
                     type="text"
                     placeholder="Phone"
+                    name="Phone"
                   />
                 </div>
                 <div class="col-md-6">
                   <label class="form-label visually-hidden" for="inputCategory"
                     >Service</label
                   >
-                  <select class="form-select" id="inputCategory">
+                  <select class="form-select" id="inputCategory" name="Service">
                     <option selected="selected">Neurology</option>
-                    <option>Cardiology</option>
-                    <option>Dental</option>
-                    <option>Ophthalmology</option>
-                    <option>Other Services</option>
+                    <option value="Cardiology">Cardiology</option>
+                    <option value="Dental">Dental</option>
+                    <option value="Ophthalmology">Ophthalmology</option>
+                    <option value="Other Services">Other Services</option>
                   </select>
                 </div>
                 <div class="col-md-6">
@@ -598,6 +610,7 @@
                     id="inputEmail"
                     type="email"
                     placeholder="Email"
+                    name="Email"
                   />
                 </div>
                 <div class="col-md-12">
@@ -612,6 +625,7 @@
                     placeholder="Message"
                     style="height: 250px"
                     required="required"
+                    name="Message"
                   ></textarea>
                 </div>
                 <div class="col-12">
@@ -622,6 +636,8 @@
                   </div>
                 </div>
               </form>
+
+              >
             </div>
           </div>
         </div>
@@ -652,7 +668,7 @@
             </div>
             <div class="col-lg-6">
               <h5 class="mb-3 text-soft-primary">SUBSCRIBE TO NEWSLETTER</h5>
-              <form class="row gx-2 gy-2 align-items-center">
+              <form class="row gx-2 gy-2 align-items-center" id="newsLetter">
                 <div class="col">
                   <div class="input-group-icon">
                     <label class="visually-hidden" for="inputEmailCta"
@@ -663,6 +679,7 @@
                       id="inputEmailCta"
                       type="email"
                       placeholder="Email"
+                      name="Email"
                     />
                   </div>
                 </div>
@@ -801,6 +818,7 @@
     <!-- ===============================================-->
     <!--    JavaScripts-->
     <!-- ===============================================-->
+    <script src="jquery.min.js"></script>
     <script src="popper.min.js"></script>
     <script src="bootstrap.min.js"></script>
     <script src="is.min.js"></script>
