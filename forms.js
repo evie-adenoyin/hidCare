@@ -2,31 +2,39 @@
 (function($){
 "use strict";
 
-// EMAIL SENDER 
-function sendEmail() {
-    Email.send({
-        Host: "smtp.gmail.com",
-        Username: "sender@email_address.com",
-        Password: "Enter your password",
-        To: 'receiver@email_address.com',
-        From: "sender@email_address.com",
-        Subject: "Sending Email using javascript",
-        Body: "Well that was easy!!",
-    })
-        .then(function (message) {
-            alert("mail sent successfully")
-        });
+// EMAIL SENDER
+ var sendEmail = async function (elementId, templateClass){
+        var loading = "false"
+         console.log(loading)
+        var result =  await emailjs.sendForm('service_g8n60vk', templateClass, elementId)
+        loading = "true"
+         console.log(loading)
+        if (result.status === 200 ) {
+            console.log('SUCCESS!', result.status, result.text);
+            loading = "false"
+             console.log(loading)
+       }
+       
+     
 }
-// ABOUT PAGE FORM
-   $( "form" ).on( "submit", function( event ) {
-      event.preventDefault();
-    var formData = $( this ).serializeArray()
-    var formValues ={}
-  $.each(formData, function(index, field){
-     formValues[this.name] = this.value
-  })
-console.log("formValues: ", formValues);
 
-  sendEmail()
+// FORM DATA
+   $( "form" ).on( "submit", function( event ) {
+        event.preventDefault();
+        var elementId = "#"+this.id
+        var templateClass ='template_ykrx50r'
+        if (elementId === "#appointment"){
+            templateClass = 'template_bzoeg6h'
+        }
+        var formData = $( this ).serializeArray()
+        console.log(formData);
+        var formValues ={}
+        $.each(formData, function(index, field){
+        formValues[this.name] = this.value
+  })
+  sendEmail(elementId, templateClass)
+ 
+     
+
 } );
 })(window.jQuery)

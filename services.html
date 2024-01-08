@@ -9,6 +9,10 @@
     <!--    Document Title-->
     <!-- ===============================================-->
     <title>HID Care | Your Radiant Living Starts Here</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
 
     <!-- ===============================================-->
     <!--    Favicons-->
@@ -24,6 +28,11 @@
     <!-- ===============================================-->
     <!--    Stylesheets-->
     <!-- ===============================================-->
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("p9VowK9JT6fcXAU3S");
+      })();
+    </script>
 
     <link
       href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900"
@@ -798,7 +807,11 @@
                   and specialists from the comfort of your home.
                 </p>
               </div>
-              <form action="#" class="appointment-form ftco-animate">
+              <form
+                action="#"
+                class="appointment-form ftco-animate"
+                id="appointmen"
+              >
                 <div class="d-md-flex">
                   <div class="form-group">
                     <input
