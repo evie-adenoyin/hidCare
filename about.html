@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>HID Care | Your Radiant Living Starts Here</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="manifest" href="manifest.json" />
+
+    <meta name="msapplication-TileImage" content="mstile-150x150.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="theme.css" rel="stylesheet" />
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+
+  <body>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav
+        class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block"
+        data-navbar-on-scroll="data-navbar-on-scroll"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img src="logo.png" width="118" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+          <div
+            class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
+              <li class="nav-item px-2">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" aria-current="page" href="about.html"
+                  >About HID</a
+                >
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <a
+              class="btn btn-sm btn-outline-primary rounded-pill order-1 order-lg-0 ms-lg-4"
+              href="#booking"
+              >Appointment</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div
+                id="myCarousel"
+                class="carousel slide carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="slider-1.jpg" class="img-fluid" alt="" />
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="slider-2.jpg" class="img-fluid" alt="" />
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="slider-3.jpg" class="img-fluid" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="heroText d-flex flex-column justify-content-center">
+                <h1 class="mt-auto mb-2">
+                  Empowering
+                  <div class="animated-info">
+                    <span class="animated-item">health</span>
+                    <span class="animated-item">lives</span>
+                    <span class="animated-item">homes</span>
+                  </div>
+                </h1>
+
+                <p class="mb-4">
+                  We're here to empower you with the tools, information, and
+                  support needed to live a healthier, happier life. Join our
+                  platform and take the first step towards a more vibrant and
+                  fulfilling future.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-padding" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+              <h2 class="mb-lg-3 mb-3">Our Story</h2>
+
+              <p style="text-align: justify">
+                Our journey began with a vision: to create a holistic platform
+                that addresses the diverse needs of individuals seeking to
+                enhance their health, personal development, and social
+                connections. Founded by a team of passionate professionals from
+                healthcare, wellness, and community advocacy backgrounds, our
+                platform emerged from a shared belief in the transformative
+                power of comprehensive care.
+              </p>
+
+              <p style="text-align: justify">
+                We're on a mission to redefine the paradigm of well-being by
+                integrating health, personal growth, and social care. Our goal
+                is to <a>empower individuals to lead fulfilling lives</a> by
+                providing accessible resources, expert guidance, and a
+                supportive community environment.
+              </p>
+            </div>
+
+            <div class="col-lg-4 col-md-5 col-12 mx-auto">
+              <div
+                class="featured-circle bg-white shadow-lg d-flex justify-content-center align-items-center"
+              >
+                <p class="featured-text">
+                  <span class="featured-number">12</span> Years<br />
+                  combined Experience
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-6 ps-0">
+              <img
+                src="slide-1.jpg"
+                class="img-fluid galleryImage"
+                alt="get a vaccine"
+                title="get a vaccine for yourself"
+              />
+            </div>
+
+            <div class="col-lg-6 col-6 pe-0">
+              <img
+                src="slide-2.jpg"
+                class="img-fluid galleryImage"
+                alt="wear a mask"
+                title="wear a mask to protect yourself"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-padding pb-0" id="timeline">
+        <div class="container">
+          <div class="row">
+            <h2 class="text-center mb-lg-5 mb-4">Why Choose HID Care</h2>
+
+            <div class="timeline">
+              <div
+                class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes"
+              >
+                <div
+                  class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg"
+                >
+                  <h3 class="text-light">Holistic Approach</h3>
+
+                  <p>
+                    We integrate health, personal growth, and social care for a
+                    comprehensive well-being experience.
+                  </p>
+                </div>
+
+                <div
+                  class="col-3 col-sm-1 order-2 timeline-icons text-md-center"
+                >
+                  <i class="bi-book timeline-icon"></i>
+                </div>
+
+                <div
+                  class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date"
+                >
+                  <time></time>
+                </div>
+              </div>
+
+              <div
+                class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4"
+              >
+                <div
+                  class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg"
+                >
+                  <h3 class="text-light">Expert Guidance</h3>
+
+                  <p>
+                    Access information and services curated by healthcare
+                    professionals, personal development experts, and community
+                    advocates.
+                  </p>
+                </div>
+
+                <div
+                  class="col-3 col-sm-1 order-2 timeline-icons text-md-center"
+                >
+                  <i class="bi-patch-check-fill timeline-icon"></i>
+                </div>
+
+                <div
+                  class="col-9 col-md-5 pe-md-3 pe-lg-0 order-1 order-md-3 py-4 timeline-date"
+                >
+                  <time></time>
+                </div>
+              </div>
+
+              <div
+                class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes"
+              >
+                <div
+                  class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg"
+                >
+                  <h3 class="text-light">Personalized Support</h3>
+
+                  <p>
+                    Benefit from personalized plans and resources tailored to
+                    your unique needs, ensuring a customized approach to your
+                    well-being
+                  </p>
+                </div>
+
+                <div
+                  class="col-3 col-sm-1 order-2 timeline-icons text-md-center"
+                >
+                  <i class="bi-file-medical timeline-icon"></i>
+                </div>
+
+                <div
+                  class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date"
+                >
+                  <time></time>
+                </div>
+              </div>
+
+              <div
+                class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4"
+              >
+                <div
+                  class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg"
+                >
+                  <h3 class="text-light">Compassion</h3>
+
+                  <p>
+                    We are committed to delivering compassionate and
+                    personalized care, prioritizing your well-being at every
+                    step.
+                  </p>
+                </div>
+
+                <div
+                  class="col-3 col-sm-1 order-2 timeline-icons text-md-center"
+                >
+                  <i class="bi-person timeline-icon"></i>
+                </div>
+
+                <div
+                  class="col-9 col-md-5 pe-md-3 pe-lg-0 order-1 order-md-3 py-4 timeline-date"
+                >
+                  <time></time>
+                </div>
+              </div>
+
+              <div
+                class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes"
+              >
+                <div
+                  class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg"
+                >
+                  <h3 class="text-light">Every age &amp; stage</h3>
+
+                  <p>
+                    Whether you're a young adult, a parent, or a senior, HID
+                    caters to individuals at every life stage. Explore
+                    age-specific advice, parenting tips, and senior care
+                    resources tailored to your unique needs.
+                  </p>
+                </div>
+
+                <div
+                  class="col-3 col-sm-1 order-2 timeline-icons text-md-center"
+                >
+                  <i class="bi-globe timeline-icon"></i>
+                </div>
+
+                <div
+                  class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date"
+                >
+                  <time></time>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-padding" id="booking">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-12 mx-auto">
+              <div class="booking-form">
+                <h2 class="text-center mb-lg-3 mb-2">Book an appointment</h2>
+
+                <form role="form" method="post" id="appointmentForm">
+                  <div class="row">
+                    <div class="col-lg-6 col-12">
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        placeholder="Full name"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        pattern="[^ @]*@[^ @]*"
+                        class="form-control"
+                        placeholder="Email address"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                      <input
+                        type="telephone"
+                        name="phone"
+                        id="phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        class="form-control"
+                        placeholder="Phone: 123-456-7890"
+                      />
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                      <input
+                        type="date"
+                        name="date"
+                        id="date"
+                        value=""
+                        class="form-control"
+                      />
+                    </div>
+
+                    <div class="col-12">
+                      <textarea
+                        class="form-control"
+                        rows="5"
+                        id="message"
+                        name="message"
+                        placeholder="Additional Message"
+                      ></textarea>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6 mx-auto">
+                      <button
+                        type="submit"
+                        class="form-control"
+                        id="submit-button"
+                      >
+                        Book Now
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-0 bg-secondary">
+        <div
+          class="bg-holder opacity-25"
+          style="
+            background-image: url(dot-bg.png);
+            background-position: top left;
+            margin-top: -3.125rem;
+            background-size: auto;
+          "
+        ></div>
+        <!--/.bg-holder-->
+
+        <div class="container">
+          <div class="row py-8">
+            <div class="col-12 col-sm-12 col-lg-6 mb-4 order-0 order-sm-0">
+              <a class="text-decoration-none" href="#"
+                ><img src="footer-logo.png" alt=""
+              /></a>
+              <p class="text-light my-4">
+                Your radiant living <br />starts here.
+              </p>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 mb-3 order-2 order-sm-1">
+              <h5 class="lh-lg fw-bold mb-4 text-light font-sans-serif">
+                Specialist Care
+              </h5>
+              <ul class="list-unstyled mb-md-4 mb-lg-0">
+                <li class="lh-lg">
+                  <a class="footer-link" href="#!">Eye care</a>
+                </li>
+                <li class="lh-lg">
+                  <a class="footer-link" href="#!">Cardiac care</a>
+                </li>
+                <li class="lh-lg">
+                  <a class="footer-link" href="#!">Heart care</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 mb-3 order-3 order-sm-2">
+              <h5 class="lh-lg fw-bold text-light mb-4 font-sans-serif">
+                General Care
+              </h5>
+              <ul class="list-unstyled mb-md-4 mb-lg-0">
+                <li class="lh-lg">
+                  <a class="footer-link" href="#!">Home Care</a>
+                </li>
+                <li class="lh-lg">
+                  <a class="footer-link" href="#!">Live-In Care</a>
+                </li>
+                <li class="lh-lg">
+                  <a class="footer-link" href="#!">Agency Staffing</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 mb-3 order-3 order-sm-2">
+              <h5 class="lh-lg fw-bold text-light mb-4 font-sans-serif">
+                Customer Care
+              </h5>
+              <ul class="list-unstyled mb-md-4 mb-lg-0">
+                <li class="lh-lg">
+                  <a class="footer-link" href="about.html">About Us</a>
+                </li>
+                <li class="lh-lg">
+                  <a class="footer-link" href="contact.html">Contact US</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================-->
+        <!-- <section> begin ============================-->
+        <section class="py-0 bg-primary">
+          <div class="container">
+            <div
+              class="row justify-content-md-between justify-content-evenly py-4"
+            >
+              <div
+                class="col-12 col-sm-8 col-md-6 col-lg-auto text-center text-md-start"
+              >
+                <p class="fs--1 my-2 fw-bold text-200">
+                  All rights Reserved &copy; HID Care, 2024
+                </p>
+              </div>
+              <div class="col-12 col-sm-8 col-md-6">
+                <p class="fs--1 my-2 text-center text-md-end text-200">
+                  Made with&nbsp;
+                  <svg
+                    class="bi bi-suit-heart-fill"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    fill="#F95C19"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"
+                    ></path></svg
+                  >&nbsp;by&nbsp;<a
+                    class="fw-bold text-info"
+                    href="https://twitter.com/ifonedis"
+                    target="_blank"
+                    >Ifonedis</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- end of .container-->
+        </section>
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
+      </section>
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="scrollspy.min.js"></script>
+    <script src="custom.js"></script>
+    <script src="forms.js"></script>
+
+    <script src="theme.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&amp;family=Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&amp;display=swap"
+      rel="stylesheet"
+    />
+  </body>
+</html>
