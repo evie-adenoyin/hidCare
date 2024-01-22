@@ -4799,6 +4799,7 @@ fieldset:disabled .btn {
   white-space: nowrap;
 }
 
+
 @media (min-width: 1200px) {
   .navbar-brand {
     font-size: 1.728rem;
@@ -9489,7 +9490,7 @@ fieldset:disabled .btn {
 }
 
 .text-secondary {
-  color: #1B71A1 !important;
+  color: #6699ff !important;
 }
 
 .text-success {
@@ -18874,7 +18875,7 @@ strong {
 } 
 
 .timeline h3 {
-  background: var(--dark-color);
+  background: #283779;
 }
 
 .timeline::before {
@@ -19156,7 +19157,7 @@ strong {
 }
 
 .booking-form #submit-button {
-  background: var(--dark-color);
+  background: #283779;
   border-bottom: 0;
   font-weight: var(--font-weight-semibold);
   color: var(--white-color);
